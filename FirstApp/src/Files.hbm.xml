@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entity.Files" table="Files">
+		<meta attribute="class-description">
+		</meta>
+		<id name="fileId" type="long" column="fileId">
+			<generator class="increment" />
+		</id>
+		<property name="fileName" column="fileName" type="string" />
+		<property name="separator" column="separator_symbol" type="string" />
+
+		<!-- <many-to-one name="fileColumnMeta" class="entity.ColumnMeta" column="idColumnMeta" 
+			cascade="merge" lazy="false" not-null="true" /> -->
+
+		<many-to-one name="fileColumnMeta" class="entity.ColumnMeta"
+			fetch="select">
+			<column name="idColumnMeta" not-null="true" />
+		</many-to-one>
+		<property name="lastUpdtTS" column="lastUpdtTS" type="date" />
+		<property name="fileTypes" column="fileTypes">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">enums.FileTypes</param>
+				<param name="useNamed">true</param>
+			</type>
+		</property>
+	</class>
+</hibernate-mapping>

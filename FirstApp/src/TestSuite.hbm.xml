@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entity.TestSuite" table="TestSuite">
+		<meta attribute="class-description">
+		</meta>
+		<id name="testSuiteId" type="long" column="testSuiteId">
+			<generator class="increment" />
+		</id>
+		<property name="testSuiteName" column="testSuiteName" type="string" />
+		<property name="suiteDescription" column="suiteDescription"
+			type="string" />
+		<property name="lastUpdtTS" column="lastUpdtTS" type="date" />
+	</class>
+</hibernate-mapping>

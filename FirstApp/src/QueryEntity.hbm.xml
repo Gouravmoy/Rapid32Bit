@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entity.QueryEntity" table="QueryEntity">
+		<meta attribute="class-description">
+		</meta>
+		<id name="queryId" type="long" column="queryId">
+			<generator class="increment" />
+		</id>
+		<property name="paramNames" column="paramNames" type="string" />
+		<property name="mainQuery" column="mainQuery" type="string"
+			length="20000" />
+		<property name="queryName" column="queryName" type="string" />
+		<property name="dataByColNameFlag" column="dataByColNameFlag"
+			type="boolean" />
+		<many-to-one name="queryColumnMeta" column="queryColumnMeta"
+			class="entity.ColumnMeta"/>
+		<property name="queryType" column="queryType">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">enums.QueryType</param>
+				<param name="useNamed">true</param>
+			</type>
+		</property>
+		<property name="lastUpdtTS" column="lastUpdtTS" type="date" />
+	</class>
+</hibernate-mapping>

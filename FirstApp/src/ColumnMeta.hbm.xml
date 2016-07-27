@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="entity.ColumnMeta" table="columnMeta_table">
+		<meta attribute="class-description">
+		</meta>
+		<id name="idColumnMeta" type="long" column="idColumnMeta">
+			<generator class="increment" />
+		</id>
+		<property name="columnMetaName" type="string" length="10000"
+			column="columnMetaName" />
+		<property name="uniqueCols" column="uniqueCols" type="string" />
+		<property name="colNames" column="colNames" type="string" />
+		<property name="lastUpdtTS" column="lastUpdtTS" type="date" />
+	</class>
+</hibernate-mapping>

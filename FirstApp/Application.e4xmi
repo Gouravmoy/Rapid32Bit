@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_OdI28CPLEeaPTs8-mQmJJw" elementId="org.eclipse.e4.ide.application" bindingContexts="_OdI2-SPLEeaPTs8-mQmJJw">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_OdI28SPLEeaPTs8-mQmJJw" label="Rapid Data Comparator" iconURI="platform:/plugin/FirstApp/icons/lightning.png" width="500" height="400">
+    <tags>shellMaximized</tags>
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_iyNsACzGEearnMCRUwQ6jg" elementId="firstapp.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_jf-w8CzGEearnMCRUwQ6jg" elementId="firstapp.perspective.0">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_X9vTYCZQEeaMv4wGnaG2Yw" elementId="firstapp.partsashcontainer.0" containerData="100">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_ah1n0CZQEeaMv4wGnaG2Yw" elementId="firstapp.partsashcontainer.1" containerData="70" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_j1OVsC7KEeaTPPOnebA5yA" elementId="firstapp.partsashcontainer.4" containerData="20">
+              <children xsi:type="basic:PartStack" xmi:id="_k_JLIC7KEeaTPPOnebA5yA" elementId="firstapp.partstack.1">
+                <children xsi:type="basic:Part" xmi:id="_bQ-lwCZQEeaMv4wGnaG2Yw" elementId="firstapp.part.workspace" containerData="20" contributionURI="bundleclass://FirstApp/views.WorkBenchTreesView" label="Workspace" iconURI="platform:/plugin/FirstApp/src/icons/Home.png" closeable="true">
+                  <toolbar xmi:id="_J3pj8C7LEeaTPPOnebA5yA" elementId="firstapp.toolbar.1"/>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_sGMJgC7OEeahsrr2Dy70Aw" elementId="firstapp.partsashcontainer.5" containerData="60">
+              <children xsi:type="basic:PartStack" xmi:id="_vS4vAC7OEeahsrr2Dy70Aw" elementId="firstapp.partstack.2">
+                <children xsi:type="basic:Part" xmi:id="_biArYCZQEeaMv4wGnaG2Yw" elementId="firstapp.part.playground" containerData="60" contributionURI="bundleclass://FirstApp/views.Dummy" label="Play Ground" iconURI="platform:/plugin/FirstApp/src/icons/edit.png"/>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_d3zW0CweEeaH8stH9JM_3g" elementId="firstapp.partsashcontainer.3" containerData="20">
+              <children xsi:type="basic:PartStack" xmi:id="_UBmh8CzHEearnMCRUwQ6jg" elementId="firstapp.partstack.0">
+                <children xsi:type="basic:Part" xmi:id="_mHeuACweEeaH8stH9JM_3g" elementId="firstapp.part.properties" containerData="50" contributionURI="bundleclass://FirstApp/views.PropViewer" label="Properties" iconURI="platform:/plugin/FirstApp/src/icons/test.png"/>
+                <children xsi:type="basic:Part" xmi:id="_byySUCZQEeaMv4wGnaG2Yw" elementId="firstapp.part.chumma" containerData="50" contributionURI="bundleclass://FirstApp/views.Dummy" label="Play Ground" iconURI="platform:/plugin/FirstApp/src/icons/clear.png"/>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_a7Ue0CZQEeaMv4wGnaG2Yw" elementId="firstapp.partsashcontainer.2" containerData="30" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_UkS-wDOrEeaQweZTlN4WPw" elementId="firstapp.partsashcontainer.6" containerData="20">
+              <children xsi:type="basic:PartStack" xmi:id="_O2Fq0D6YEeaWbIEU4AkKnw" elementId="firstapp.partstack.4">
+                <children xsi:type="basic:Part" xmi:id="_ZbAbED6YEeaWbIEU4AkKnw" elementId="firstapp.part.properties" containerData="50" contributionURI="bundleclass://FirstApp/views.PropViewer" label="Properties" iconURI="platform:/plugin/FirstApp/src/icons/test.png"/>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_VBDzQDOrEeaQweZTlN4WPw" elementId="firstapp.partsashcontainer.7" containerData="60">
+              <children xsi:type="basic:PartStack" xmi:id="_XjfTwDOrEeaQweZTlN4WPw" elementId="firstapp.partstack.3" containerData="">
+                <children xsi:type="basic:Part" xmi:id="_dEHXUCZQEeaMv4wGnaG2Yw" elementId="firstapp.part.progress" contributionURI="bundleclass://FirstApp/views.ProgresMonitor" label="Progress" iconURI="platform:/plugin/FirstApp/src/icons/edit.png"/>
+                <children xsi:type="basic:Part" xmi:id="_1MC6kDhtEeaSOY0J2RN9cg" elementId="firstapp.part.console" contributionURI="bundleclass://FirstApp/views.util.ConsoleView" label="Console" iconURI="platform:/plugin/FirstApp/icons/connect-icon.png"/>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_VbOmwDOrEeaQweZTlN4WPw" elementId="firstapp.partsashcontainer.8" containerData="20">
+              <children xsi:type="basic:PartStack" xmi:id="_WMvIQD6YEeaWbIEU4AkKnw" elementId="firstapp.partstack.5">
+                <children xsi:type="basic:Part" xmi:id="_d3WqkD6YEeaWbIEU4AkKnw" elementId="firstapp.part.chumma" containerData="50" contributionURI="bundleclass://FirstApp/views.Dummy" label="Play Ground" iconURI="platform:/plugin/FirstApp/src/icons/clear.png"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_Nd8zUCcXEeaR15-7a4FzIg" elementId="firstapp.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_QerZYCcXEeaR15-7a4FzIg" elementId="firstapp.menu.file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Q2Pk0CcXEeaR15-7a4FzIg" elementId="firstapp.handledmenuitem.open" label="Open" iconURI="platform:/plugin/FirstApp/icons/Exit.png" command="_bgjA0CcWEeaR15-7a4FzIg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_d5vQUCcXEeaR15-7a4FzIg" elementId="firstapp.handledmenuitem.save" label="Save" iconURI="platform:/plugin/FirstApp/icons/save.png" command="_dbJFQCcWEeaR15-7a4FzIg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_gxrt0CcXEeaR15-7a4FzIg" elementId="firstapp.handledmenuitem.exit" label="Exit" iconURI="platform:/plugin/FirstApp/icons/delete.png" command="_Z6XtMCcWEeaR15-7a4FzIg"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_Ahl4QCzCEearnMCRUwQ6jg" elementId="firstapp.menu.functions" label="Functions">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_I9kfcDcdEeaOa9aTV2zQnQ" elementId="firstapp.handledmenuitem.createworkflow" label="Create Work Flow" iconURI="platform:/plugin/FirstApp/icons/connect.png" command="_Sbub8DcdEeaOa9aTV2zQnQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_EsdWMCzCEearnMCRUwQ6jg" elementId="firstapp.handledmenuitem.adddatabase" label="Add Database" iconURI="platform:/plugin/FirstApp/icons/database_add.png" tooltip="Add a new Database" command="_ZcEYoCe7EeacxK7aKK3GkA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_LLQloCzCEearnMCRUwQ6jg" elementId="firstapp.handledmenuitem.addcolumnmeta" label="Add Column Meta" iconURI="platform:/plugin/FirstApp/icons/list_delete.png" tooltip="Add Column Meta in the DB" mnemonics="" command="_D0LxwCy_EearnMCRUwQ6jg"/>
+        <children xsi:type="menu:Menu" xmi:id="_gUtEkCzCEearnMCRUwQ6jg" elementId="firstapp.menu.addqueries" label="Add Queries">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_is6SECzCEearnMCRUwQ6jg" elementId="firstapp.handledmenuitem.addsourcetargetquery" label="Add Source/Target Query" iconURI="platform:/plugin/FirstApp/icons/sql-query.png" tooltip="Add Source/Target Query to DB" command="_Y884QCf-EeacxK7aKK3GkA"/>
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_p4Ll8CzCEearnMCRUwQ6jg" elementId="firstapp.handledmenuitem.addlookupqueries" label="Add LookUp Queries" iconURI="platform:/plugin/FirstApp/icons/transform_flip.png" command="_IbYrUC1MEea3b6owD0TZtQ"/>
+        </children>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_yqZCcCzCEearnMCRUwQ6jg" elementId="firstapp.handledmenuitem.addfiles" label="Add Files" iconURI="platform:/plugin/FirstApp/icons/excel-icon.png" mnemonics="Add File Structures in the DB" command="_Oq3jECyhEearnMCRUwQ6jg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_4exb4CzCEearnMCRUwQ6jg" elementId="firstapp.handledmenuitem.addtestscenario" label="Add Test Scenario" iconURI="platform:/plugin/FirstApp/icons/test.png" tooltip="Add Project in the DB" command="_Cjk_ACldEeaO3sKKAF_8Cg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_hQ6isDOoEea45JMDhcQe5g" elementId="firstapp.handledmenuitem.addtestsuite" label="Add Test Suite" iconURI="platform:/plugin/FirstApp/icons/database_connect.png"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_iZ0HgDLDEeafYttScwiP3Q" elementId="firstapp.menu.run" label="Run">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_jz11gDLDEeafYttScwiP3Q" elementId="firstapp.handledmenuitem.execute" label="Execute" iconURI="platform:/plugin/FirstApp/icons/lightning.png" command="_qg7_oDLDEeafYttScwiP3Q"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_WuXJ8DOoEea45JMDhcQe5g" elementId="firstapp.handledmenuitem.executetestscenario" label="Execute Test Scenario" iconURI="platform:/plugin/FirstApp/icons/lightning.png"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_bPmggDOoEea45JMDhcQe5g" elementId="firstapp.handledmenuitem.executetestsuite" label="Execute Test Suite" iconURI="platform:/plugin/FirstApp/icons/transform_flip.png"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_mCSEwCcXEeaR15-7a4FzIg" elementId="firstapp.menu.help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mlYKwCcXEeaR15-7a4FzIg" elementId="firstapp.handledmenuitem.help" label="About" iconURI="platform:/plugin/FirstApp/icons/sql-query.png" command="_mvlFECcWEeaR15-7a4FzIg"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_20WTwCcXEeaR15-7a4FzIg" elementId="firstapp.trimbar.0">
+      <children xsi:type="menu:ToolBar" xmi:id="_3prZQCcXEeaR15-7a4FzIg" elementId="firstapp.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4VLNUCcXEeaR15-7a4FzIg" elementId="firstapp.handledtoolitem.0" iconURI="platform:/plugin/FirstApp/icons/edit.png" command="_bgjA0CcWEeaR15-7a4FzIg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8zucQCcXEeaR15-7a4FzIg" elementId="firstapp.handledtoolitem.save" label="Save" iconURI="platform:/plugin/FirstApp/icons/save.png" command="_dbJFQCcWEeaR15-7a4FzIg"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_D-UasCcYEeaR15-7a4FzIg" elementId="firstapp.toolbarseparator.0"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_FxiEwCcYEeaR15-7a4FzIg" elementId="firstapp.handledtoolitem.1" iconURI="platform:/plugin/FirstApp/icons/sample.png" command="_mvlFECcWEeaR15-7a4FzIg"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_NplpECe7EeacxK7aKK3GkA" elementId="firstapp.toolbarseparator.1"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_O5tNICe7EeacxK7aKK3GkA" elementId="firstapp.handledtoolitem.2" iconURI="platform:/plugin/FirstApp/icons/database_add.png" command="_ZcEYoCe7EeacxK7aKK3GkA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_NN4CACf-EeacxK7aKK3GkA" elementId="firstapp.handledtoolitem.3" iconURI="platform:/plugin/FirstApp/icons/sql-query.png" command="_Y884QCf-EeacxK7aKK3GkA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_CqPigClvEeaO3sKKAF_8Cg" elementId="firstapp.handledtoolitem.addtestscenario" label="Add Project" iconURI="platform:/plugin/FirstApp/icons/Home.png" command="_Cjk_ACldEeaO3sKKAF_8Cg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hTLiACyhEearnMCRUwQ6jg" elementId="firstapp.handledtoolitem.addfiles" label="Add Files" iconURI="platform:/plugin/FirstApp/icons/excel-icon.png" command="_Oq3jECyhEearnMCRUwQ6jg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZeKx8Cy_EearnMCRUwQ6jg" elementId="firstapp.handledtoolitem.addcolmeta" label="Add ColMeta" iconURI="platform:/plugin/FirstApp/icons/test.png" command="_D0LxwCy_EearnMCRUwQ6jg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_U9T60C1MEea3b6owD0TZtQ" elementId="firstapp.handledtoolitem.addlookupquery" label="addLookUpQuery" iconURI="platform:/plugin/FirstApp/icons/transform_flip.png" command="_IbYrUC1MEea3b6owD0TZtQ"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_-LD90DOoEea45JMDhcQe5g" elementId="firstapp.toolbarseparator.2"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__qlP0DOoEea45JMDhcQe5g" elementId="firstapp.handledtoolitem.execute" label="Execute" iconURI="platform:/plugin/FirstApp/icons/lightning.png" command="_qg7_oDLDEeafYttScwiP3Q"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_s38xgCcWEeaR15-7a4FzIg" elementId="firstapp.handler.0" contributionURI="bundleclass://FirstApp/handlers.QuitHandler" command="_Z6XtMCcWEeaR15-7a4FzIg"/>
+  <handlers xmi:id="_BZeU0CcXEeaR15-7a4FzIg" elementId="firstapp.handler.1" contributionURI="bundleclass://FirstApp/handlers.OpenHandler" command="_bgjA0CcWEeaR15-7a4FzIg"/>
+  <handlers xmi:id="_De_P0CcXEeaR15-7a4FzIg" elementId="firstapp.handler.2" contributionURI="bundleclass://FirstApp/handlers.SaveHandler" command="_dbJFQCcWEeaR15-7a4FzIg"/>
+  <handlers xmi:id="_GNs40CcXEeaR15-7a4FzIg" elementId="firstapp.handler.3" contributionURI="bundleclass://FirstApp/handlers.AboutHandler" command="_mvlFECcWEeaR15-7a4FzIg"/>
+  <handlers xmi:id="_KNST0CcXEeaR15-7a4FzIg" elementId="firstapp.handler.4" contributionURI="bundleclass://FirstApp/handlers.NewWindow" command="_qXlGgCcWEeaR15-7a4FzIg"/>
+  <handlers xmi:id="_r-_hQCe7EeacxK7aKK3GkA" elementId="firstapp.handler.addDataBase" contributionURI="bundleclass://FirstApp/handlers.AddDataBaseHandler" command="_ZcEYoCe7EeacxK7aKK3GkA"/>
+  <handlers xmi:id="_cI4BsCf-EeacxK7aKK3GkA" elementId="firstapp.handler.5" contributionURI="bundleclass://FirstApp/handlers.AddQueryHandler" command="_Y884QCf-EeacxK7aKK3GkA"/>
+  <handlers xmi:id="_SAabQClvEeaO3sKKAF_8Cg" elementId="firstapp.handler.6" contributionURI="bundleclass://FirstApp/handlers.AddTestScenarioHandler" command="_Cjk_ACldEeaO3sKKAF_8Cg"/>
+  <handlers xmi:id="_a9nHECyhEearnMCRUwQ6jg" elementId="firstapp.handler.7" contributionURI="bundleclass://FirstApp/handlers.AddFilesHandler" command="_Oq3jECyhEearnMCRUwQ6jg"/>
+  <handlers xmi:id="_SqsTACy_EearnMCRUwQ6jg" elementId="firstapp.handler.8" contributionURI="bundleclass://FirstApp/handlers.AddColMetaHandler" command="_D0LxwCy_EearnMCRUwQ6jg"/>
+  <handlers xmi:id="_KngkoC1MEea3b6owD0TZtQ" elementId="firstapp.handler.9" contributionURI="bundleclass://FirstApp/handlers.LookUpQueryAddHandler" command="_IbYrUC1MEea3b6owD0TZtQ"/>
+  <handlers xmi:id="_syWooDLDEeafYttScwiP3Q" elementId="firstapp.handler.10" contributionURI="bundleclass://FirstApp/handlers.ExecuteMainHandler" command="_qg7_oDLDEeafYttScwiP3Q"/>
+  <handlers xmi:id="_URaLMDcdEeaOa9aTV2zQnQ" elementId="firstapp.handler.11" contributionURI="bundleclass://FirstApp/handlers.WorkFlowHandler" command="_Sbub8DcdEeaOa9aTV2zQnQ"/>
+  <rootContext xmi:id="_OdI2-SPLEeaPTs8-mQmJJw" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_OdI2-iPLEeaPTs8-mQmJJw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_OdI2-yPLEeaPTs8-mQmJJw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_Z6XtMCcWEeaR15-7a4FzIg" elementId="firstapp.command.quitcomman" commandName="quitComman"/>
+  <commands xmi:id="_bgjA0CcWEeaR15-7a4FzIg" elementId="firstapp.command.openfile" commandName="openFile"/>
+  <commands xmi:id="_dbJFQCcWEeaR15-7a4FzIg" elementId="firstapp.command.savefile" commandName="saveFile"/>
+  <commands xmi:id="_mvlFECcWEeaR15-7a4FzIg" elementId="firstapp.command.aboutcommand" commandName="aboutCommand"/>
+  <commands xmi:id="_qXlGgCcWEeaR15-7a4FzIg" elementId="firstapp.command.newwindow" commandName="newWindow"/>
+  <commands xmi:id="_ZcEYoCe7EeacxK7aKK3GkA" elementId="firstapp.command.addDataBase" commandName="addDataBase"/>
+  <commands xmi:id="_Y884QCf-EeacxK7aKK3GkA" elementId="firstapp.command.addQuery" commandName="addQuery"/>
+  <commands xmi:id="_Cjk_ACldEeaO3sKKAF_8Cg" elementId="firstapp.command.addtestscenario" commandName="addTestScenario"/>
+  <commands xmi:id="_Oq3jECyhEearnMCRUwQ6jg" elementId="firstapp.command.addfiles" commandName="addFiles"/>
+  <commands xmi:id="_D0LxwCy_EearnMCRUwQ6jg" elementId="firstapp.command.addcolmeta" commandName="addColMeta"/>
+  <commands xmi:id="_IbYrUC1MEea3b6owD0TZtQ" elementId="firstapp.command.addlookupcol" commandName="addLookUpCol"/>
+  <commands xmi:id="_qg7_oDLDEeafYttScwiP3Q" elementId="firstapp.command.executemain" commandName="ExecuteMain"/>
+  <commands xmi:id="_Sbub8DcdEeaOa9aTV2zQnQ" elementId="firstapp.command.workflow" commandName="WorkFlow"/>
+  <addons xmi:id="_OdI28iPLEeaPTs8-mQmJJw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_OdI28yPLEeaPTs8-mQmJJw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_OdI29CPLEeaPTs8-mQmJJw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_OdI29SPLEeaPTs8-mQmJJw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_OdI29iPLEeaPTs8-mQmJJw" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_OdI29yPLEeaPTs8-mQmJJw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_OdI2-CPLEeaPTs8-mQmJJw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

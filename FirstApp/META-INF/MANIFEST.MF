@@ -1,0 +1,56 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FirstApp
+Bundle-SymbolicName: FirstApp;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: firstapp.Activator
+Require-Bundle: javax.inject;bundle-version="0.0.0",
+ org.eclipse.swt;bundle-version="0.0.0",
+ org.eclipse.e4.ui.model.workbench;bundle-version="0.0.0",
+ org.eclipse.jface;bundle-version="0.0.0",
+ org.eclipse.e4.ui.services;bundle-version="0.0.0",
+ org.eclipse.e4.ui.workbench;bundle-version="0.0.0",
+ org.eclipse.e4.core.di;bundle-version="0.0.0",
+ org.eclipse.e4.ui.di;bundle-version="0.0.0",
+ org.eclipse.e4.core.contexts;bundle-version="0.0.0",
+ org.eclipse.core.runtime;bundle-version="0.0.0",
+ org.eclipse.core.databinding;bundle-version="1.5.0",
+ org.eclipse.core.databinding.beans;bundle-version="1.3.0",
+ org.eclipse.core.databinding.observable;bundle-version="1.5.0",
+ org.eclipse.core.databinding.property;bundle-version="1.5.0",
+ org.eclipse.jface.databinding;bundle-version="1.7.0",
+ org.eclipse.ui.intro;bundle-version="3.4.300",
+ org.eclipse.ui.forms;bundle-version="3.6.200",
+ org.eclipse.ui.views;bundle-version="3.8.0",
+ org.junit
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: Jars/Hibernate Derby Jars/derby-10.12.1.1.jar,
+ Jars/Hibernate Derby Jars/derbyclient-10.12.1.1.jar,
+ Jars/Hibernate Derby Jars/derbynet-10.10.1.1.jar,
+ Jars/Hibernate Derby Jars/derbytools-10.12.1.1.jar,
+ Jars/Hibernate Derby Jars/hibernate-commons-annotations-3.2.0.Final.jar,
+ Jars/Hibernate Derby Jars/hibernate-core-3.6.8.Final.jar,
+ Jars/Hibernate Derby Jars/hibernate-entitymanager-3.6.8.Final.jar,
+ Jars/Hibernate Derby Jars/hibernate-jpa-2.0-api-1.0.1.Final.jar,
+ .,
+ Jars/Others Supporting/ant-1.8.2.jar,
+ Jars/Others Supporting/antlr-2.7.6.jar,
+ Jars/Others Supporting/asm-3.1.jar,
+ Jars/Others Supporting/cglib-2.2.jar,
+ Jars/Others Supporting/commons-collections-3.1.jar,
+ Jars/Others Supporting/commons-csv-1.4.jar,
+ Jars/Others Supporting/commons-io-1.3.2.jar,
+ Jars/Others Supporting/dom4j-1.6.1.jar,
+ Jars/Others Supporting/hive-jdbc-2.1.0.jar,
+ Jars/Others Supporting/hive-service-0.11.0.jar,
+ Jars/Others Supporting/javassist-3.12.0.GA.jar,
+ Jars/Others Supporting/jta-1.1.jar,
+ Jars/Others Supporting/logback-classic-1.1.7.jar,
+ Jars/Others Supporting/logback-core-1.1.7.jar,
+ Jars/Others Supporting/mapdb-0.9.2.jar,
+ Jars/Others Supporting/mysql-connector-java-5.1.38.jar,
+ Jars/Others Supporting/ojdbc6.jar,
+ Jars/Others Supporting/org.eclipse.swt.win32.win32.x86-3.104.0.v20150528-0211.jar,
+ Jars/Others Supporting/slf4j-api-1.7.21.jar,
+ Jars/Others Supporting/externalsortinginjava-0.1.9.jar

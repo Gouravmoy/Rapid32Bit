@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entity.TestScenario" table="TestScenario">
+		<meta attribute="class-description">
+		</meta>
+		<id name="projectId" type="long" column="projectId">
+			<generator class="increment" />
+		</id>
+		<property name="projectName" column="projectName" type="string" />
+		<property name="testScenarioDescription" column="testScenarioDescription"
+			type="string" />
+		<property name="lastUpdtTS" column="lastUpdtTS" type="date" />
+		<property name="source" column="source" type="long" not-null="true" />
+		<property name="target" column="target" type="long" not-null="true" />
+		<property name="sourceLookup" column="sourceLookup" type="long"
+			not-null="true" />
+		<property name="targetLookup" column="targetLookup" type="long"
+			not-null="true" />
+		<many-to-one name="testSuite" class="entity.TestSuite"
+			fetch="select">
+			<column name="testSuiteId" not-null="false" />
+		</many-to-one>
+		<one-to-one name="columnMeta" class="entity.ColumnMeta"
+			cascade="save-update"></one-to-one>
+		<one-to-one name="columnMetaTarget" class="entity.ColumnMeta"
+			cascade="save-update"></one-to-one>
+		<property name="projectType" column="projectType">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">enums.ProjectType</param>
+				<param name="useNamed">true</param>
+			</type>
+		</property>
+	</class>
+</hibernate-mapping>

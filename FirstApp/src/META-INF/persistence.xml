@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- <property name="hibernate.dialect"> org.hibernate.dialect.MySQLDialect 
+			</property> <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property> 
+			<property name="hibernate.connection.url"> jdbc:mysql://localhost/MyDb </property> 
+			<property name="show_sql">true</property> <property name="format_sql">true</property> 
+			<property name="hibernate.connection.username">root</property> <property 
+			name="hibernate.connection.password">root</property> <property name="hibernate.enable_lazy_load_no_trans">true</property> 
+			<property name="hibernate.hbm2ddl.auto">update</property> -->
+
+
+		<property name="hibernate.dialect"> org.hibernate.dialect.DerbyDialect
+		</property>
+		<property name="hibernate.connection.driver_class"> org.apache.derby.jdbc.EmbeddedDriver
+		</property>
+		<property name="hibernate.connection.url">
+			jdbc:derby://localhost:1527/MyDB;create=true
+		</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root123</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<mapping resource="Database.hbm.xml" />
+		<mapping resource="Files.hbm.xml" />
+		<mapping resource="ColumnMeta.hbm.xml" />
+		<mapping resource="LookUpCols.hbm.xml" />
+		<mapping resource="TestScenario.hbm.xml" />
+		<mapping resource="QueryEntity.hbm.xml" />
+		<mapping resource="Person.hbm.xml" />
+		<mapping resource="TestSuite.hbm.xml" />
+		<mapping resource="Column.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

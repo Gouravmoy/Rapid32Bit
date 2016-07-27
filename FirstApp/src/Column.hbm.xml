@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entity.Column" table="ColumnTable">
+		<meta attribute="class-description">
+		</meta>
+		<id name="columnId" type="long" column="columnId">
+			<generator class="increment" />
+		</id>
+		<many-to-one name="columnMeta" column="columnMeta" class="entity.ColumnMeta"
+			fetch="select" not-null="true" />
+		<property name="columnName" column="columnName" type="string" />
+		<property name="defaultValue" column="defaultValue" type="string" />
+		<property name="columnLength" column="columnLength" type="string" />
+		<property name="decimalLength" column="decimalLength" type="string" />
+		<property name="uniqueColumn" column="uniqueIndicator" type="boolean"></property>
+		<property name="columnType" column="columnType">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">enums.ColumnType</param>
+				<param name="useNamed">true</param>
+			</type>
+		</property>
+		<property name="date" column="lastUpdtTS" type="date" />
+	</class>
+</hibernate-mapping>

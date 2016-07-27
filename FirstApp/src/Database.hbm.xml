@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entity.Database" table="database_table">
+		<meta attribute="class-description">
+		</meta>
+		<id name="dbId" type="long" column="dbId">
+			<generator class="increment" />
+		</id>
+		<property name="connectionName" column="connectionName" type="string" />
+		<property name="connectionDescription" column="connectionDescription"
+			type="string" />
+		<property name="databaseName" column="databaseName" type="string" />
+		<property name="serverName" column="serverName" type="string" />
+		<property name="userName" column="userName" type="string" />
+		<property name="password" column="password" type="string" />
+		<property name="portNo" column="portNo" type="string" />
+		<property name="lastUpdtTS" column="lastUpdtTS" type="date" />
+		<property name="dbType" column="dbType">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">enums.DBTypes</param>
+				<param name="useNamed">true</param>
+			</type>
+		</property>
+	</class>
+</hibernate-mapping>
